@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AS Engineering & Safety Consultants</title>
+<meta name="description" content="AS Engineering & Safety Consultants — Engineering, EHS, safety audit, risk assessment, training and compliance consulting.">
+<style>
+:root{
+  --navy:#0b1f33; --blue:#0d6efd; --orange:#f59e0b; --light:#f5f8fc;
+  --text:#17212b; --muted:#667788; --white:#fff; --border:#e4eaf1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,31,51,.97);box-shadow:0 3px 15px rgba(0,0,0,.12)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#fff;text-decoration:none;font-size:20px;font-weight:800;letter-spacing:.3px}
+.logo span{color:var(--orange)}
+nav a{color:#dbe7f2;text-decoration:none;margin-left:25px;font-size:14px}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#0b1f33 0%,#103f63 62%,#0d6efd 100%);color:#fff;padding:92px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:rgba(245,158,11,.16);color:#ffd37a;border:1px solid rgba(245,158,11,.4);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:18px;color:#dceaf5;max-width:680px}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--orange);color:#111}
+.btn-outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+.hero-card{background:#fff;color:var(--text);padding:27px;border-radius:18px;box-shadow:0 18px 45px rgba(0,0,0,.2)}
+.hero-card h3{color:var(--navy);margin-bottom:15px}
+.hero-card div{padding:11px 0;border-bottom:1px solid var(--border)}
+.hero-card div:last-child{border:0}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-head h2{font-size:34px;color:var(--navy);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{padding:27px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:0 7px 25px rgba(17,44,71,.06)}
+.icon{width:46px;height:46px;border-radius:11px;background:#eaf3ff;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:15px}
+.card h3{margin-bottom:8px;color:var(--navy)}
+.card p{color:var(--muted);font-size:15px}
+.alt{background:var(--light)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about h2{font-size:36px;color:var(--navy);margin-bottom:15px}
+.about p{color:var(--muted);margin-bottom:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.check{font-weight:700;font-size:14px}
+.check::before{content:"✓";color:var(--orange);margin-right:9px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.stat{background:#fff;border-radius:12px;padding:20px;text-align:center;border:1px solid var(--border)}
+.stat strong{display:block;font-size:28px;color:var(--blue)}
+.contact{background:var(--navy);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact h2{font-size:36px;margin-bottom:12px}
+.contact p{color:#cbd9e6}
+.contact-box{background:#fff;color:var(--text);border-radius:15px;padding:28px}
+.contact-item{padding:13px 0;border-bottom:1px solid var(--border)}
+.contact-item:last-child{border:0}
+.contact-item strong{display:block;color:var(--navy)}
+.contact a{color:var(--blue);text-decoration:none}
+footer{background:#071522;color:#9fb0bf;padding:22px 0;text-align:center;font-size:13px}
+@media(max-width:800px){
+  nav{display:none}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}.hero{padding:65px 0}
+}
+@media(max-width:560px){
+  .cards,.checks,.stats{grid-template-columns:1fr}
+  section{padding:58px 0}.hero p{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">AS <span>Engineering</span> & Safety</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">ENGINEERING • EHS • SAFETY CONSULTING</div>
+      <h1>Safer Projects.<br>Stronger Compliance.</h1>
+      <p>Professional engineering and safety consulting solutions for organizations that want safer workplaces, stronger EHS systems and practical compliance support.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Get a Consultation</a>
+        <a class="btn btn-outline" href="tel:+918668650316">Call +91 86686 50316</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Our Focus</h3>
+      <div>✓ Workplace Safety & EHS Management</div>
+      <div>✓ Safety Audits & Compliance</div>
+      <div>✓ Risk Assessment & JSA</div>
+      <div>✓ Safety Training & Awareness</div>
+      <div>✓ Engineering Safety Consulting</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Consulting Services</h2>
+      <p>Practical, site-focused safety and engineering support tailored to your project and organization.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">🛡️</div><h3>EHS Consulting</h3><p>Develop and strengthen EHS systems, procedures, inspections, documentation and safety culture.</p></article>
+      <article class="card"><div class="icon">🔎</div><h3>Safety Audits</h3><p>Systematic workplace and project audits with observations, risk prioritization and corrective-action recommendations.</p></article>
+      <article class="card"><div class="icon">⚠️</div><h3>Risk Assessment</h3><p>HIRA, JSA/JHA and task-based risk assessments for construction, engineering and industrial activities.</p></article>
+      <article class="card"><div class="icon">📋</div><h3>Compliance Support</h3><p>Support for statutory, client and management safety requirements and compliance tracking.</p></article>
+      <article class="card"><div class="icon">🎓</div><h3>Safety Training</h3><p>Induction, toolbox talks, working-at-height, fire safety, emergency response and job-specific training.</p></article>
+      <article class="card"><div class="icon">🏗️</div><h3>Project Safety</h3><p>Construction and project-site safety planning, method statements, inspections and implementation support.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="container about">
+    <div>
+      <h2>Safety that works in the real world.</h2>
+      <p>AS Engineering & Safety Consultants provides practical safety and engineering consulting designed to help management and site teams identify hazards, control risks and improve compliance.</p>
+      <p>Our approach combines field-level implementation with clear documentation, measurable corrective actions and safety leadership.</p>
+      <div class="checks">
+        <div class="check">Practical site solutions</div>
+        <div class="check">Risk-based approach</div>
+        <div class="check">Clear documentation</div>
+        <div class="check">Training & awareness</div>
+      </div>
+    </div>
+    <div>
+      <div class="stats">
+        <div class="stat"><strong>11+</strong><span>Years Experience</span></div>
+        <div class="stat"><strong>EHS</strong><span>Safety Focus</span></div>
+        <div class="stat"><strong>360°</strong><span>Safety Support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Let's make your workplace safer.</h2>
+      <p>Contact AS Engineering & Safety Consultants for safety audits, EHS consulting, risk assessments, training and project safety support.</p>
+    </div>
+    <div class="contact-box">
+      <div class="contact-item"><strong>Consultant</strong>Anil Selkari</div>
+      <div class="contact-item"><strong>Phone</strong><a href="tel:+918668650316">+91 86686 50316</a></div>
+      <div class="contact-item"><strong>Email</strong><a href="mailto:Anil.selkari.as@gmail.com">Anil.selkari.as@gmail.com</a></div>
+      <div class="contact-item"><strong>Business</strong>AS Engineering & Safety Consultants</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 AS Engineering & Safety Consultants. All rights reserved.</footer>
+</body>
+</html>
